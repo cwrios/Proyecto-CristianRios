@@ -72,7 +72,7 @@
 h2{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image:radial-gradient(brown , white);
+    background-image:radial-gradient(brown , rgb(241, 199, 199));
     color: white;
     text-align: center;
     text-transform: capitalize;
