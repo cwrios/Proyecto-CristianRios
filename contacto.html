@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Proyecto Grid - Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto Grid - Contacto</title>
 </head>
+
 <body>
     <div class="indexContainer">
         <header class="header">
@@ -20,16 +24,16 @@
                 <h1>Guardapolvos Vero Ruiz</h1>
             </nav>
         </header>
-       
+
         <nav class="navbar navbar-expand-md  navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">Menu</a>
-    
+
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
@@ -51,21 +55,42 @@
                 </ul>
             </div>
         </nav>
-        <!-- navbar fin -->
-        <div class="mainIndex">
-                <div class="imgInd imagenIndex1"><h2>Guardapolvos acrocel blanco</h2></div>
-                <div class="imgInd imagenIndex2"><h2>Guardapolvos acrocel color</h2></div>
-                <div class="imgInd imagenIndex3"><h2>Guardapolvos tropical mecanica blanca</h2></div>                 
-                <div class="imgInd imagenIndex4"><h2>Guardapolvos tropical mecanica color</h2></div>             
-                <div class="imgInd imagenIndex5"><h2>Guardapolvos cuadrille</h2></div>
+        <div class="contacto container">
+            <h2>Contacto</h2>
+            <div class="form-group">
+                <label for="usr">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <h3>Elegi el modelo a consultar</h3>
+            <div class="form-group">
+                <label for="sel1">Selecciona tu modelo:</label>
+                <select class="form-control" id="sel1">
+                    <option>Guardapolvos acrocel blanco</option>
+                    <option>Guardapolvos acrocel color</option>
+                    <option>Guardapolvos tropical mecanica blanca</option>
+                    <option>Guardapolvos tropical mecanica color</option>
+                    <option>Guardapolvos cuadrille</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Envianos tu Consulta:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
-                    
-            <footer>
-                <i class="fa-brands fa-facebook">@VeroRuizGuardapolvos</i>
-                <i class="fa-brands fa-whatsapp">Celular: 2262513961</i>
-                <i class="fa-brands fa-instagram">@guardapolvosveroruiz</i>
-                <p>Todos los derechos reservados®</p>
-            </footer>
+
+
+
+        <footer>
+            <i class="fa-brands fa-facebook">@VeroRuizGuardapolvos</i>
+            <i class="fa-brands fa-whatsapp">Celular: 2262513961</i>
+            <i class="fa-brands fa-instagram">@guardapolvosveroruiz</i>
+            <p>Todos los derechos reservados®</p>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -77,4 +102,6 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
+<!-- navbar fin -->
