@@ -77,7 +77,7 @@ h2{
     background-color: brown;
 }
 .carousel-item {
-    width: 100%;
+    width: 100vw;
     height: 600px;
 }
 .carousel-control-prev-icon{
@@ -270,3 +270,52 @@ footer {
 }
 
 /* Fin Pagina Contacto */
+/* Inicio Pagina nosotros */
+.jumbotron{
+    background-image: url(./imagenes/main_fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color:rgb(98, 10, 109);
+    text-shadow: 0 0 5px #000;
+    border-radius:0;
+    margin-bottom:0;
+}
+h2{
+    text-align: center;
+    background-color: rgb(76, 44, 145);
+}
+.btn-success{
+    background-color: rgb(191, 156, 14);
+}
+.btn-success:hover{
+    background-color: rgb(41, 10, 23);
+}
+.btn-success:active{
+    background-color: #333 !important;
+}
+.nleft{
+    background-color: #333;
+    height:450px;
+    background-image: url(./imagenes/imagenproduccion.jpg);
+    background-size: cover;
+    background-position: center;
+    height:450px;
+}
+.nrigth{
+    background-image: url(./imagenes/nright.jpg);
+    height:auto;
+    color:rgb(241, 183, 189);
+    text-shadow: 0 0 5px #000;
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+/* Fin Pagina nosotros */
+/* Inicio Pagina trabajos */
+.trabajos img{
+    object-fit: cover;
+    height:400px;
+    width:100%;
+}
+/* Fin Pagina trabajos */
