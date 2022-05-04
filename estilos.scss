@@ -1,0 +1,318 @@
+
+@keyframes animHeader{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header {
+    grid-area: header;
+
+    nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, rgb(184, 99, 146) , rgb(253, 228, 250));
+    }
+    nav h1 {
+        animation-duration: 3s;
+        animation-name: animHeader;
+        animation-iteration-count: infinite;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        color: rgb(129, 80, 171);
+        width:80%;
+        }
+    nav div{
+        width: 20%;
+        height: 100%;
+    }
+    nav div img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.navbar{
+    background-color: rgb(167, 58, 109);
+
+}
+.navbar-brand:hover{
+    background-color: rgb(126, 102, 157) !important;
+}
+.navbar a{
+
+    color:rgb(85, 16, 61) !important;
+    padding-left: 10px !important ;
+
+}
+.navbar a:hover{
+    background-color: rgb(74, 42, 171);
+    color:rgb(110, 35, 185) !important;
+}
+/* Inicio Pagina Ofertas */
+
+
+h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:radial-gradient(brown , rgb(241, 199, 199));
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.carousel-indicators li{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background-color: brown;
+}
+.carousel-item {
+    width: 100%;
+    height: 600px;
+}
+.carousel-control-prev-icon{
+    background-color: brown;
+}
+.carousel-control-next-icon{
+    background-color: brown;
+}
+
+
+/* Fin Pagina Ofertas */
+/* Inicio Pagina Index */
+
+
+.mainIndex{
+    height: 800px;
+    width: 100%;
+    background-image: url(./imagenes/main_fondo.jpeg);
+    display:grid;
+    padding: 20px;
+    gap:10px;
+    grid-auto-flow: row;
+    background-position: center;
+
+}
+.imgInd{
+
+    border:2px solid rgb(44, 16, 154);
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgb(115, 100, 100) ;
+    transition: all 0.7s;
+
+}
+.imgInd:hover{
+    transform: rotatex(360deg);
+    transition: all 2s;
+}
+.imagenIndex1{
+    background-image: url(./imagenes/acrocel_blanco.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.imagenIndex2{
+    background-image: url(./imagenes/acrocel_color.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenIndex3{
+    background-image: url(./imagenes/tropical_mec_blanca.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenIndex4{
+    background-image: url(./imagenes/tropical_mec_color.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenIndex5{
+    background-image: url(./imagenes/cuadrille.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .imgInd{
+        height:auto;
+    }
+    .header nav ul li a{
+    font-size: 10px;
+}
+.header nav h1{
+    font-size: 20px;
+}
+footer {
+    font-size: 15px;
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    .mainIndex{
+        grid-template-columns: 1fr 1fr;
+    }
+    .header nav ul li a{
+        font-size: 10px;
+
+    }
+    .header nav h1{
+        font-size: 20px;
+
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .mainIndex{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .header nav ul li a{
+        font-size: 20px;
+    }
+    .header nav h1{
+        font-size: 30px;
+
+    }
+    .imagenIndex1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .imagenIndex2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+    .imagenIndex3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .imagenIndex4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .imagenIndex5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+
+    }
+
+}
+    @media only screen and (min-width: 1024px){
+
+.mainIndex{
+    grid-template-columns: repeat(4,1fr);
+}
+.imgInd{
+    height: auto;
+}
+.mainIndex{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.imagenIndex1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.imagenIndex2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+.imagenIndex3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.imagenIndex4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.imagenIndex5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+}
+    }
+
+/* Fin Pagina Index */
+/* Inicio Pagina Contacto */
+.contacto{
+    background-image: url(./imagenes/main_fondo.jpeg);
+    color:rgb(101, 87, 67);
+}
+
+/* Fin Pagina Contacto */
+/* Inicio Pagina nosotros */
+.jumbotron{
+    background-image: url(./imagenes/main_fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color:rgb(98, 10, 109);
+    text-shadow: 0 0 5px #000;
+    border-radius:0;
+    margin-bottom:0;
+}
+h2{
+    text-align: center;
+    background-color: rgb(76, 44, 145);
+}
+.btn-success{
+    background-color: rgb(191, 156, 14);
+}
+.btn-success:hover{
+    background-color: rgb(41, 10, 23);
+}
+.btn-success:active{
+    background-color: #333 !important;
+}
+.nleft{
+    background-color: #333;
+    height:450px;
+    background-image: url(./imagenes/imagenproduccion.jpg);
+    background-size: cover;
+    background-position: center;
+    height:450px;
+}
+.nrigth{
+    background-image: url(./imagenes/nright.jpg);
+    height:auto;
+    color:rgb(241, 183, 189);
+    text-shadow: 0 0 5px #000;
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+/* Fin Pagina nosotros */
+/* Inicio Pagina trabajos */
+.trabajos img{
+    object-fit: cover;
+    height:400px;
+    width:100%;
+}
+/* Fin Pagina trabajos */
+/* footer inicio*/
+footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(53, 4, 46);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    p{
+        font-size: 25px;
+        background-color: rgb(52, 16, 16);
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+/*footer fin */
