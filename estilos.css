@@ -98,7 +98,7 @@ h2 {
 
 .carousel-item {
   width: 100%;
-  height: 600px;
+  height: 800px;
 }
 
 .carousel-control-prev-icon {
@@ -112,7 +112,7 @@ h2 {
 /* Fin Pagina Ofertas */
 /* Inicio Pagina Index */
 .mainIndex {
-  height: 800px;
+  height: auto;
   width: 100%;
   background-image: url(./imagenes/main_fondo.jpeg);
   display: -ms-grid;
@@ -170,8 +170,11 @@ h2 {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .imgInd {
+  .mainIndex {
     height: auto;
+  }
+  .imgInd {
+    height: 400px;
   }
   .header nav ul li a {
     font-size: 10px;
@@ -180,12 +183,16 @@ h2 {
     font-size: 20px;
   }
   footer {
+    font-size: 10px;
+  }
+  footer i {
     font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .mainIndex {
+    height: auto;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -195,15 +202,25 @@ h2 {
   .header nav h1 {
     font-size: 20px;
   }
+  .imgInd {
+    height: 400px;
+  }
   footer {
+    font-size: 10px;
+  }
+  footer i {
     font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .mainIndex {
+    height: auto;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .imgInd {
+    height: 500px;
   }
   .header nav ul li a {
     font-size: 20px;
@@ -255,11 +272,12 @@ h2 {
 
 @media only screen and (min-width: 1024px) {
   .mainIndex {
+    height: auto;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
   .imgInd {
-    height: auto;
+    height: 600px;
   }
   .mainIndex {
     -ms-grid-columns: 1fr 1fr 1fr;
